@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership</title>
+    <style>
+        h1{
+            background-color: black;
+            color: aqua;
+            text-align: center;
+        }
+        .name{
+            background-color: black;
+            color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form to apply for Gym Membership</h1>
+    <form action="post">
+    <label class="name" for="username">Enter your Name:-</label>
+    <input type="text" name="username" placeholder="Enter your name">
+    <br>
+    <br>
+    Enter your D.O.B:- <input type="date" name="date" placeholder="Enter your DOB">
+    <br>
+    <br>
+    Select your Gender <input type="radio"  id="male" name="gender" value="male">
+    <label for="male">male</label>
+    
+    <input type="radio"  id="female" name="gender" value="female">
+    <label for="female">female</label>
+    
+    <input type="radio"  id="other" name="gender" value="other">
+    <label for="other">Trans</label>
+    <br>
+    <br>
+    Choose your Plan <select name="3 Months">
+                        <option value="3 Months">3 Months</option>
+                        <option value="6 Months">6 Months</option>
+                        <option value="12 Months">12 Months</option>
+    </select>
+    <br>
+    <br>
+    <div>
+        <input type="button"  value="submit">
+    </div>
+    </form>
+</body>
+</html>

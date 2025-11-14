@@ -1,0 +1,7 @@
+Choose your Plan<input type="radio" 
+id="3 Months" name="months" value="3 Months">
+<label for="3 Months">3 Months</label>
+<input type="radio" id="6 Months" name="months" value="6 Months">
+<label for="6 Months">6 Months</label>
+<input type="radio" id="12 Months" name="months" value="12 Months">
+<label for="12 Months">12 Months</label>
