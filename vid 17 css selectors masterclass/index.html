@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /*ELEMENT SELECTOR if we create another div its background will also be affected*/
+        div{
+            /*background-color: cadetblue;*/
+        }
+
+
+        /* CLASS SELECTOR HE MENTIONED CLASS SATHICH WORK KRTA*/
+        .cadetblue{
+            background-color: cadetblue;
+        }
+
+
+        /*ID SELECTOR  HE MENTIONED ID SATHICH WORK KRTA*/
+        #green{
+            background-color: green;
+        }
+
+        /*CHILD SELECTOR* IF WE WANT TO CHANGE BACKGROUND COLOR OF A PARAGRAPH INSIDE A DIV*/
+        div > p{
+            color:blue;
+            background-color: blueviolet;
+
+        }
+
+
+        /* DESCENDANT SELECTOR he div madhe jyachya pn aat madhe paragragh asel tyala select krta*/
+        div p{
+            background-color: aquamarine;
+        }
+
+
+        /*UNIVERSAL SELECTOR margin ani padding sathi*/
+        *{
+            margin: 0;
+            padding:0;
+        }
+
+        /*PSEUDO SELECTOR he link cha color change krto visit zhalyvr*/
+        a:visited{
+            color:chocolate
+        }
+
+        /*unvisited link dakhavto*/
+        a:link{
+            color: chartreuse;
+        }
+
+        /*visit krnarya link la bg color deto*/
+        a:active{
+            background-color: crimson;
+        }
+
+
+        
+        /* hover kelyvr bg color change hoto*/
+        a:hover{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="cadetblue">i am soham
+    <article>
+        <p> i am a paragraph inside a div</p>
+    </article>
+    </div>
+    <div id="green">sdasas</div>
+    <a href="https://www.google.com">google vr jaa</a>
+    <a href="https://www.facebook.com">facebook vr jaa</a>
+</body>
+</html>
