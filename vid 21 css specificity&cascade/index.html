@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*The specificity of element selector is 1*/
+        h1 {
+            color: blue;
+        }
+
+        /* The specificity of Class selector is 10*/
+        .red {
+            color: red;
+        }
+
+        /* The specificity of Class selector is 1+ 10=11 so this color will apply*/
+        h1.yellow {
+            color: yellow;
+
+        }
+
+        /* The specificity of Class selector is 10*/
+        .purple {
+            color: purple;
+        }
+
+        /* The specificity of id  selector is 100*/
+        /* The specificity of inline selector is 1000*/
+        /* The specificity of universal selector is 0*/
+        /* other wise in class selector the last value will apply and if we add important to any css than that value will apply due to important*/
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class=" red yellow purple">hello my name is don</h1>
+    </div>
+</body>
+
+</html>
